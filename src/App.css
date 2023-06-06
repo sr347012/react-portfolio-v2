@@ -28,11 +28,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 0px 1px #EF9166;
+    border-radius: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    box-shadow: 0px 0px 0px 1px #EF9166;
+    border-radius: 50%;
+  }
+  50% {
+    box-shadow: 0px 0px 3px 0px #EF9166;
+    border-radius: 35%;
+    height: 95%;
   }
 }
+
+.skills-vs-clients {
+  color: #EF9166;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1%;
+  padding: 1%;
+}
+
+.separator {
+  width: 1px;
+  height: 105%;
+  background-color: whitesmoke;
+  margin: 5%;
+  padding: 0.5%;
+  border-radius: 50%;
+  transform: rotate(15deg);
+  animation: glow 2s infinite ease;
+}
+ .skills-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+ }
