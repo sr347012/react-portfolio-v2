@@ -1,10 +1,24 @@
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import './Styles.css';
+import emailjs from '@emailjs/browser';
+import Alert from '@mui/material/Alert';
 
 function Contact() {
     const [name, setName] = useState('');
     const [text, setText] = useState('');
-    const textRef = useRef()
+    const [emailSent, setEmailsent] = useState(false);
+    const textRef = useRef();
+
+    const sendEmail = () => {
+        setEmailsent(!emailSent);
+        var templateParams = {
+            name: name,
+            text: text
+        }
+        emailjs.send('service_8cdoze3', 'template_gob8xig', templateParams, 'nwD_Rx4QvdQxaXrjM')
+        .then(()=>  setTimeout(()=> setEmailsent(emailSent), 4000))
+    }
+
     const updateName = (e) => {
         e.preventDefault();
         setName(e.target.value);
@@ -32,12 +46,16 @@ function Contact() {
         </div>
         <div className='contact-textarea'>
             <label>Message: </label>
-            <textarea ref={textRef}></textarea>
+            <textarea ref={textRef} onChange={updateText}></textarea>
         </div>
         <div className='contact-btn'>
-            <button onClick={updateText}>Submit</button>
+            <button onClick={sendEmail}>Submit</button>
         </div>
-
+        {name} {text}
+        <div >
+            {emailSent? 
+            (<Alert severity="success">Thank you for contacting us!!</Alert>) : <></> }
+        </div>
     </div>
     </div>
     </>

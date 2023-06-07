@@ -13,7 +13,7 @@ import Clients from './components/Clients';
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Welcome />
       <Works />
       <History />

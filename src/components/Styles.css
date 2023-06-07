@@ -367,7 +367,10 @@
   }
   .angular {
     background-image: url(./../Assets/Angular.png);
-    animation: angular infinite 20s linear;
+    background-color: whitesmoke;
+    color: #f47b03;
+    /* background: #EF9166; */
+    animation: angularanime infinite 20s linear;
   }
   .react {
     background-image: url(./../logo.svg);
@@ -410,17 +413,11 @@
     }
   };
 
-  @keyframes angular {
-    0% {
+  @keyframes angularanime {
+    from {
       transform: rotate(0deg);
-      background-color: #EF9166;
     }
-    50% {
-      transform: rotate(30deg);
-      background-color: aliceblue ;
-    }
-    100% {
-      transform: rotate(0deg);
-      background-color: aqua;
+    to {
+      transform: rotate(360deg);
     }
   }
