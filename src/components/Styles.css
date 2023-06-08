@@ -131,14 +131,7 @@
     color: #000;
   }
 
-  /* .history span {
-    background-size: 150px 150px;
-    width: 150px;
-    height: 150px;
-    margin: 10%;
-    padding: 10%;
 
-  } */
   .img-tcs {
     background-image: url(./../Assets/tcs.png);
     background-size: 200px 100px;
@@ -197,6 +190,13 @@
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
+  }
+  .history-heading {
+    color: #EF9166;
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
   }
   .contact {
     display: flex;
@@ -403,6 +403,11 @@
   .bootstrap {
     background-image: url(./../Assets/bootstrap.png);
   }
+
+  .works-parent {
+    background-color: #EF9166;
+  }
+
 
   @keyframes react {
     from {

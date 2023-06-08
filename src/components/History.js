@@ -12,6 +12,8 @@ import './Styles.css';
 
 function History() {
   return (
+    <>
+    <div className='history-heading'>  <h3>History</h3></div>
     <div className='history'>
     <Timeline position="alternate">
     <TimelineItem>
@@ -192,6 +194,8 @@ function History() {
     </TimelineItem>
   </Timeline>
     </div>
+
+    </>
 
   )
 }
