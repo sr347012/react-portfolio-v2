@@ -4,7 +4,7 @@ import './Styles.css';
 function Welcome() {
   return (
     <>
-    <div className="parent">
+    <div className="welcome-parent">
         <span className='image01'></span>
         <span className='image02'></span>   
         <span className="content">

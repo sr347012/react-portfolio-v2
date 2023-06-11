@@ -19,10 +19,8 @@
   .content h1 {
     font-size: 9em;
     position: absolute;
-    top:50%;
-    left: 50%;
-    margin-left: 20%;
-    margin-top: 5%;
+    top:40%;
+    left: 60%;
     /* transform: translate(-50%, -50%); */
   }
 
@@ -36,11 +34,11 @@
       animation: animate 4s ease-in-out infinite;
   }
   
-  .parent {
+  .welcome-parent {
     position: relative;
-    top: 5%;
-    left: -20em;  
-    width: 900px;
+    /* top: 10%; */
+    left: -15%;  
+    width: 950px;
   }
 
   .image01 {
@@ -69,10 +67,6 @@
     -webkit-filter: brightness(110%);
   }
 
-
-
-  
-  
   @keyframes animate {
       0%,
       100% {
@@ -191,7 +185,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  .history-heading {
+  .history-heading, .works-heading {
     color: #EF9166;
     padding: 2%;
     margin: 2%;
