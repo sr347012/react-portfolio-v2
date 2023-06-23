@@ -22,6 +22,8 @@ function Skills() {
           <div className='react-native'></div>
         </div>
         <div className='bootstrap'></div>
+        <div>
+        </div>
       </div>
 
     </div>
