@@ -80,6 +80,7 @@ function Works() {
           p: 2,
           width: 200,
           height: 320,
+          animation: 'angularanime infinite 20s linear',
           rotate: '20deg',
           borderRadius: '300px',
           display: 'flex',
@@ -88,7 +89,7 @@ function Works() {
           bgcolor: '#EF9166',
           // color: '#f47b03',
           fontSize: '24px',
-          // border: '1px solid #f47b03',
+          // border: '5px solid white',
           boxShadow: '2px 2px 2px 2px #EF9166'
           
         },

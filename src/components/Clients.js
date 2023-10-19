@@ -14,6 +14,10 @@ const words = [
     value: 30,
   },
   {
+    text: 'Wayfair',
+    value: 30,
+  },
+  {
     text: 'Southern California Edison',
     value: 12,
   },

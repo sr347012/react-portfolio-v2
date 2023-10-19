@@ -155,7 +155,8 @@
     height: 70px;
   }
   .img-photon {
-    background-image: url(./../Assets/phtn.png);
+    background-image: url(./../Assets/Photon.png);
+
     background-size: 200px 100px;
     display: block;
     width: 200px;
@@ -352,55 +353,68 @@
     /* background-color: #EF9166; */
     /* color: aliceblue; */
     /* background: #f47b03; */
-    border-radius: 5%;
+    /* border-radius: 5%; */
     background-size: 80px 80px;
     width: 80px;
     height: 80px;
+    margin: 5%;
 
   }
-  .ibm {
-    background-image: url(./../Assets/IBM.png);
+  .npm {
+    background-image: url(./../Assets/npm.svg);
+    animation: npmanime infinite 5s linear;
     /* background: transparent; */
   }
   .aws {
-    background-image: url(./../Assets/AWS.png);
+    background-image: url(./../Assets/AWS.svg);
+    /* animation: react infinite 20s linear; */
   }
   .angular {
-    background-image: url(./../Assets/Angular.png);
-    background-color: whitesmoke;
-    color: #f47b03;
+    background-image: url(./../Assets/Angular.svg);
+    /* background-color: whitesmoke; */
+    /* color: #f47b03; */
     /* background: #EF9166; */
-    animation: angularanime infinite 20s linear;
+    animation: htmlanime infinite 10s linear;
   }
   .react {
     background-image: url(./../logo.svg);
     animation: react infinite 20s linear;
   }
-  .react-native {
-    background-image: url(./../Assets/Three.js.png);
-    background-color: aliceblue;
-    animation: angular infinite 20s linear;
+  .graphQl {
+    background-image: url(./../Assets/GraphQL.svg);
+    animation: react infinite 20s linear;
+  }
+  .redux {
+    background-image: url(./../Assets/Redux.svg);
+    /* background-color: aliceblue; */
+    animation: react infinite 20s linear;
     /* color: #EF9166; */
   }
   .html {
-    background-image: url(./../Assets/HTML5.png);
-    animation: html infinite 20s linear;
+    background-image: url(./../Assets/HTML5.svg);
+    animation: htmlanime infinite 3s linear;
   }
   .css {
-    background-image: url(./../Assets/css.png);
-    animation: css infinite 20s linear;
+    background-image: url(./../Assets/CSS3.svg);
+    animation: nodeanime infinite 3s linear;
   }
   .javascript {
-    background-image: url(./../Assets/javascript.png);
+    background-image: url(./../Assets/Javascript.svg);
+    animation: npmanime infinite 3s linear;
   }
   .jest {
-    background-image: url(./../Assets/jest.png);
+    background-image: url(./../Assets/Threejs.svg);
+    animation: npmanime infinite 20s linear;
+    color: white;
+    background-color: antiquewhite;
   }
   .node {
-    background-image: url(./../Assets/node.png);
+    background-image: url(./../Assets/Nodejs.svg);
+    animation: nodeanime infinite 4s linear;
   }
   .bootstrap {
-    background-image: url(./../Assets/bootstrap.png);
+    background-image: url(./../Assets/Bootstrap.svg);
+    animation: htmlanime infinite 3s linear;
   }
 
   .works-parent {
@@ -463,11 +477,50 @@
   };
 
   @keyframes angularanime {
-    from {
-      transform: rotateX(0deg);
+    0% {
+      transform: rotateY(-30deg);
     }
-    to {
-      transform: rotateX(360deg);
+    50% {
+      transform: rotateY(30deg);
+    }
+    100% {
+      transform: rotateY(-30deg);
+    }
+  }
+  @keyframes htmlanime {
+    0% {
+      transform: rotateX(-30deg);
+    }
+    50% {
+      transform: rotateX(30deg);
+    }
+    100% {
+      transform: rotateX(-30deg);
+    }
+  }
+  @keyframes nodeanime {
+    0% {
+      transform: rotateZ(-30deg);
+    }
+    50% {
+      transform: rotateZ(30deg);
+    }
+    100% {
+      transform: rotateZ(-30deg);
+    }
+  }
+  @keyframes npmanime {
+    0% {
+      transform: scale(80%);
+      opacity: 100%;
+    }
+    50% {
+      transform: scale(100%);
+      opacity: 60%;
+        }
+    100% {
+      transform: scale(80%);
+      opacity: 100%;
     }
   }
 
