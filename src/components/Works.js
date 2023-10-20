@@ -12,19 +12,19 @@ function Works() {
   const [projects, setProjects] = useState([]);
 
   const [jsProjects, setJsProjects] = useState([
-    {id:"01", name:"JS Project 01", description:"Test description 01", link: "https://"},
-    {id:"02", name:"JS Project 02", description:"Test description 02", link: "https://"},
-    {id:"03", name:"JS Project 03", description:"Test description 03", link: "https://"},
+    {id:"01", name:"Holiday Calendar", description:"Test description 01", link: "https://js-holiday-calendar.vercel.app/"},
+    {id:"02", name:"Malik Interiors", description:"An interior designer company", link: "https://malik-interiors.vercel.app/"},
+    {id:"03", name:"My first portfolio", description:"My first portfolio", link: "https://sr347012.github.io/portfolio-V1"},
   ]);
 
   const [angProjects, setAngProjects] = useState([
-    {id:"01", name:"Angular Project 01", description:"Test description 01", link: "https://"},
-    {id:"02", name:"Angular Project 02", description:"Test description 02", link: "https://"},
-    {id:"03", name:"Angular Project 03", description:"Test description 03", link: "https://"},
+    {id:"01", name:"Ezy Money", description:"An application for faster loans", link: "https://ezy-money.vercel.app/"},
+    {id:"02", name:"Fashionista", description:"An application for fashion designers", link: "https://angular-fashion-poc.vercel.app/"},
+    {id:"03", name:"AngularCC", description:"Creative Coding in Angular using Partivle JS", link: "https://angular-creative-coding.vercel.app/"},
   ]);
 
   const [reactProjects, setReactProjects] = useState([
-    {id:"01", name:"React Project 01", description:"Test description 01", link: "https://"},
+    {id:"01", name:"Food recipes", description:"Cooking application", link: "https://sr347012.github.io/react-food-recipe/"},
     {id:"02", name:"React Project 02", description:"Test description 02", link: "https://"},
     {id:"03", name:"React Project 03", description:"Test description 03", link: "https://"},
   ]);
@@ -112,7 +112,7 @@ function Works() {
       <ul className='open-text'>
         <li>{project.name}</li>
         <li>{project.description}</li>
-        <li>{project.link}</li>
+        <li><a href={project.link}>here</a></li>
       </ul>
       <svg className='open-js-rev' viewBox="0 0 300 200" width="300" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
         <rect x="0" y="0" width="300" height="200" fill="#000"></rect>
