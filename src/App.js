@@ -15,20 +15,32 @@ function App() {
     <>
       {/* <Header /> */}
       <Welcome />
+      <hr></hr>
+
       <Works />
+      <hr></hr>
+
       <History />
+      <hr></hr>
       <div className='skills-vs-clients'>
-      <h3 >Skills </h3>
-      <h5 style={{color:"whitesmoke", margin:"2%", padding:"2%"}}>vs </h5>
-      <h3 >Clients</h3>
+        <h3 >Skills </h3>
+          <h5 style={{color:"whitesmoke", margin:"2%", padding:"2%"}}>vs </h5>
+        <h3 >Clients</h3>
       </div>
       <div className='skills-clients'>
         <Skills />
         <div className='separator'></div>
         <Clients />        
       </div>
+
+      <hr></hr>
+
       <About />
+      <hr></hr>
+
       <Contact />
+      <hr></hr>
+
       <Footer />
     </>
   );

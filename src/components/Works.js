@@ -78,10 +78,11 @@ function Works() {
         '& > :not(style)': {
           m: 3,
           p: 2,
+          mb: '10%',
           width: 200,
           height: 320,
-          animation: 'angularanime infinite 20s linear',
-          rotate: '20deg',
+          animation: 'tabanime infinite 20s linear',
+          // rotate: '20deg',
           borderRadius: '300px',
           display: 'flex',
           alignItems: 'center',
@@ -90,7 +91,7 @@ function Works() {
           // color: '#f47b03',
           fontSize: '24px',
           // border: '5px solid white',
-          boxShadow: '2px 2px 2px 2px #EF9166'
+          boxShadow: '2px 3px 5px 3px white, -3px -1px 3px 3px #EF9166',
           
         },
       }}
