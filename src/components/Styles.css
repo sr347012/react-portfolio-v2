@@ -307,20 +307,21 @@
   .about-pic {
     background-image: url(./../Assets/002.jpeg);
     display: block;
-    background-size: 300px 320px;
+    background-size: 420px 420px;
     /* background-color: #000; */
-    width: 400px;
-    height: 320px;
+    width: 570px;
+    height: 420px;
     border-radius: 10%;
   }
 
   .about-desc {
-    width: 70%;
+    width: 90%;
     color: #EF9166;
     margin: 2%;
     padding: 2%;
     word-wrap: break-word;
-    /* font-size: 14px; */
+    font-size: 14px;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
   }
 
   .footer-icons {
@@ -425,7 +426,9 @@
   .works-parent {
     background-color: #EF9166;
   }
-
+  .cs-pointer {
+    cursor: pointer;
+  }
   .open-js {
     margin-top: 2%;
     border-radius: 50px;
@@ -527,13 +530,13 @@
 
   @keyframes tabanime {
     0% {
-      transform: rotate(30deg);
+      transform: rotate(0deg);
     }
     50% {
-      transform: rotate(-30deg);
+      transform: rotate(20deg);
     }
     100% {
-      transform: rotate((30deg));
+      transform: rotate((0deg));
     }
   }
   @keyframes npmanime {
