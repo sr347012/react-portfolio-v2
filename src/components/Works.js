@@ -62,15 +62,14 @@ function Works() {
     {
       id: "02",
       name: "Trichakra",
-      description:
-        "Trichakra is an app made for three wheelers for better organisation",
+      description: "App made for three wheelers",
       link: "https://https://vercel.com/sriramachandras-projects/trichakra/6kyHB3HmunYEcjrgmpjyXa9yWj66",
     },
     {
       id: "03",
-      name: "React Project 03",
-      description: "Test description 03",
-      link: "https://google.com",
+      name: "Cricket",
+      description: "SNCC Academy",
+      link: "https://react-cricket.vercel.app/",
     },
   ]);
 
