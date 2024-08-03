@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
+import js01 from "./../Assets/js01.png"
+import js02 from "./../Assets/js02.png"
+import js03 from "./../Assets/js03.png"
+import ang01 from "./../Assets/ang01.png"
+import ang02 from "./../Assets/ang02.png"
+import ang03 from "./../Assets/ang03.png"
+import rct01 from "./../Assets/rct01.png"
+import rct02 from "./../Assets/rct02.png"
+import rct03 from "./../Assets/rct03.png"
 
 function Works() {
   const [clickedJS, setClickedJs] = useState(false);
@@ -16,18 +25,21 @@ function Works() {
       name: "Holiday Calendar",
       description: "Test description 01",
       link: "https://js-holiday-calendar.vercel.app/",
+      imgLink: js01,
     },
     {
       id: "02",
       name: "Malik Interiors",
       description: "An interior designer company",
       link: "https://malik-interiors.vercel.app/",
+      imgLink: js02,
     },
     {
       id: "03",
       name: "My first portfolio",
       description: "My first portfolio",
       link: "https://sr347012.github.io/portfolio-V1",
+      imgLink: js03,
     },
   ]);
 
@@ -37,18 +49,21 @@ function Works() {
       name: "Ezy Money",
       description: "An application for faster loans",
       link: "https://ezy-money.vercel.app/",
+      imgLink: ang01,
     },
     {
       id: "02",
       name: "Fashionista",
       description: "An application for fashion designers",
       link: "https://angular-fashion-poc.vercel.app/",
+      imgLink: ang02,
     },
     {
       id: "03",
       name: "AngularCC",
       description: "Creative Coding in Angular using Partivle JS",
       link: "https://angular-creative-coding.vercel.app/",
+      imgLink: ang03,
     },
   ]);
 
@@ -58,18 +73,21 @@ function Works() {
       name: "Food recipes",
       description: "Cooking application",
       link: "https://sr347012.github.io/react-food-recipe/",
+      imgLink: rct01,
     },
     {
       id: "02",
       name: "Trichakra",
       description: "App made for three wheelers",
       link: "https://https://vercel.com/sriramachandras-projects/trichakra/6kyHB3HmunYEcjrgmpjyXa9yWj66",
+      imgLink: rct02,
     },
     {
       id: "03",
       name: "Cricket",
       description: "SNCC Academy",
       link: "https://react-cricket.vercel.app/",
+      imgLink: rct03,
     },
   ]);
 
@@ -153,9 +171,6 @@ function Works() {
             },
           }}
         >
-          <Paper className="cs-pointer" onClick={updateClickedJS}>
-            Javascript
-          </Paper>
           <Paper className="cs-pointer" onClick={updateClickedReact}>
             React
           </Paper>
@@ -164,6 +179,9 @@ function Works() {
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedOther}>
             React Native
+          </Paper>
+          <Paper className="cs-pointer" onClick={updateClickedJS}>
+            Javascript
           </Paper>
         </Box>
       </div>
@@ -190,10 +208,9 @@ function Works() {
             </svg>
             <ul className="open-text">
               <li>{project.name}</li>
-              <li>{project.description}</li>
-              <li>
-                <a href={project.link}>here</a>
-              </li>
+              <a href={project.link}>
+                <img src={project.imgLink} width={350} height={200}></img>
+              </a>
             </ul>
             <svg
               className="open-js-rev"
