@@ -6,7 +6,7 @@ import js02 from "./../Assets/js02.png"
 import js03 from "./../Assets/js03.png"
 import ang01 from "./../Assets/ang01.png"
 import ang02 from "./../Assets/ang02.png"
-import ang03 from "./../Assets/ang03.png"
+import ang03 from "./../Assets/ang04.png"
 import rct01 from "./../Assets/rct01.png"
 import rct02 from "./../Assets/rct02.png"
 import rct03 from "./../Assets/rct03.png"
@@ -60,9 +60,9 @@ function Works() {
     },
     {
       id: "03",
-      name: "AngularCC",
-      description: "Creative Coding in Angular using Partivle JS",
-      link: "https://angular-creative-coding.vercel.app/",
+      name: "Food recipe",
+      description: "Cooking application",
+      link: "https://angular-food-recipe.vercel.app/",
       imgLink: ang03,
     },
   ]);
