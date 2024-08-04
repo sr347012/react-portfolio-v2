@@ -79,7 +79,7 @@ function Works() {
       id: "02",
       name: "Trichakra",
       description: "App made for three wheelers",
-      link: "https://https://vercel.com/sriramachandras-projects/trichakra/6kyHB3HmunYEcjrgmpjyXa9yWj66",
+      link: "https://trichakra-jeufgbaca-sr347012.vercel.app/",
       imgLink: rct02,
     },
     {
