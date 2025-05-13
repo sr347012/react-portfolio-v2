@@ -371,6 +371,11 @@
     animation: npmanime infinite 5s linear;
     /* background: transparent; */
   }
+  .mui {
+    background-image: url(./../Assets/MUI.svg);
+    animation: npmanime infinite 5s linear;
+    /* background: transparent; */
+  }
   .aws {
     background-image: url(./../Assets/AWS.svg);
     /* animation: react infinite 20s linear; */
@@ -409,6 +414,12 @@
     animation: npmanime infinite 3s linear;
   }
   .jest {
+    background-image: url(./../Assets/Jest.svg);
+    animation: npmanime infinite 20s linear;
+    color: white;
+    background-color: antiquewhite;
+  }
+  .three {
     background-image: url(./../Assets/Threejs.svg);
     animation: npmanime infinite 20s linear;
     color: white;

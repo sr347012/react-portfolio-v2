@@ -1,35 +1,59 @@
-import React from 'react'
+import React from "react";
+import Tooltip from "@mui/material/Tooltip";
 
 function Skills() {
   return (
-    <div className='skill-parent'>
-      <div className='skill-circle'>
+    <div className="skill-parent">
+      <div className="skill-circle">
         <div>
-          <div className='node'></div>
-          <div className='graphQl'></div>
-          <div className='bootstrap'></div>
+          <Tooltip title="React" placement="top">
+            <div className="react"></div>
+          </Tooltip>
+          <Tooltip title="CSS">
+            <div className="css"></div>
+          </Tooltip>
+          <Tooltip title="HTML">
+            <div className="html"></div>
+          </Tooltip>
         </div>
         <div>
-          <div className='angular'></div>
-          <div className='react'></div>
-          <div className='html'></div>
+          <Tooltip title="Redux" placement="top">
+            <div className="redux"></div>
+          </Tooltip>
+          <Tooltip title="AWS">
+            <div className="aws"></div>
+          </Tooltip>
+          <Tooltip title="Three JS">
+            <div className="three"></div>
+          </Tooltip>
         </div>
         <div>
-          <div className='css'></div>
-          <div className='javascript'></div>
-          <div className='jest'></div>
+          <Tooltip title="Javascript" placement="top">
+            <div className="javascript"></div>
+          </Tooltip>
+          <Tooltip title="Material UI">
+            <div className="mui"></div>
+          </Tooltip>
+          <Tooltip title="Node">
+            <div className="node"></div>
+          </Tooltip>
         </div>
         <div>
-          <div className='aws'></div>
-          <div className='npm'></div>
-          <div className='redux'></div>
-        </div>
-        <div>
-        </div>
-      </div>
+          <Tooltip title="Angular" placement="top">
+            <div className="angular"></div>
+          </Tooltip>
+          <Tooltip title="Bootstrap">
+            <div className="bootstrap"></div>
+          </Tooltip>
 
+          <Tooltip title="GraphQL">
+            <div className="graphQl"></div>
+          </Tooltip>
+        </div>
+        <div></div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

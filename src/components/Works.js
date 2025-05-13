@@ -172,13 +172,13 @@ function Works() {
           }}
         >
           <Paper className="cs-pointer" onClick={updateClickedReact}>
-            React
+            React 
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedAngular}>
             Angular
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedOther}>
-            React Native
+            Next
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedJS}>
             Javascript
