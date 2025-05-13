@@ -28,8 +28,8 @@ function Skills() {
           </Tooltip>
         </div>
         <div>
-          <Tooltip title="Javascript" placement="top">
-            <div className="javascript"></div>
+          <Tooltip title="Next JS" placement="top">
+            <div className="next"></div>
           </Tooltip>
           <Tooltip title="Material UI">
             <div className="mui"></div>

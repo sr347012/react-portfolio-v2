@@ -21,7 +21,7 @@ function About() {
           <p>
             I Have been into multiple technologies such as React, Angular,
             Javascript, Next JS, GraphQL. I had exposure to cloud technologies
-            such as AWS, IBM Cloud. I also had experience with databases such as
+            such as AWS, GCP & IBM Cloud. I also had experience with databases such as
             DB2, Mongo DB and PostgreSQL.
           </p>
           <br />
@@ -32,8 +32,8 @@ function About() {
             did my masters in data science and engineering. I continued towards
             doing research in computer vision and enrolled for a PhD in 2023. I
             participate in ML & AI hackathons and explore multiple
-            opportunities. I explored prompt engineering and GenAI recently and
-            built a Loan assistant bot, which automates the loan process.
+            opportunities. I explored prompt engineering & GenAI and
+            built multiple projects based on them.
           </p>
           <br />
           <p>

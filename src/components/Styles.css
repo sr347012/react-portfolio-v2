@@ -420,10 +420,12 @@
     background-color: antiquewhite;
   }
   .three {
-    background-image: url(./../Assets/Threejs.svg);
+    background-image: url(./../Assets/Three.svg);
     animation: npmanime infinite 20s linear;
-    color: white;
-    background-color: antiquewhite;
+  }
+  .next {
+    background-image: url(./../Assets/next.svg);
+    animation: npmanime infinite 20s linear;
   }
   .node {
     background-image: url(./../Assets/Nodejs.svg);
