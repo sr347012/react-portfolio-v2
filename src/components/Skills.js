@@ -20,8 +20,8 @@ function Skills() {
           <Tooltip title="Redux" placement="top">
             <div className="redux"></div>
           </Tooltip>
-          <Tooltip title="AWS">
-            <div className="aws"></div>
+          <Tooltip title="Javascript">
+            <div className="javascript"></div>
           </Tooltip>
           <Tooltip title="Three JS">
             <div className="three"></div>
