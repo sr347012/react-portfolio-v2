@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import js01 from "./../Assets/js01.png"
-import js02 from "./../Assets/js02.png"
-import js03 from "./../Assets/js03.png"
-import ang01 from "./../Assets/ang01.png"
-import ang02 from "./../Assets/ang02.png"
-import ang03 from "./../Assets/ang04.png"
-import rct01 from "./../Assets/rct01.png"
-import rct02 from "./../Assets/rct02.png"
-import rct03 from "./../Assets/rct03.png"
+import js01 from "./../Assets/js01.png";
+import js02 from "./../Assets/js02.png";
+import js03 from "./../Assets/js03.png";
+import ang01 from "./../Assets/ang01.png";
+import ang02 from "./../Assets/ang02.png";
+import ang03 from "./../Assets/ang04.png";
+import rct01 from "./../Assets/rct01.png";
+import rct02 from "./../Assets/rct02.png";
+import rct03 from "./../Assets/rct03.png";
 
 function Works() {
   const [clickedJS, setClickedJs] = useState(false);
@@ -94,21 +94,9 @@ function Works() {
   const [mobProjects, setMobProjects] = useState([
     {
       id: "01",
-      name: "Mobile Project 01",
-      description: "Test description 01",
-      link: "https://google.com",
-    },
-    {
-      id: "02",
-      name: "Mobile Project 02",
-      description: "Test description 02",
-      link: "https://google.com",
-    },
-    {
-      id: "03",
-      name: "Mobile Project 03",
-      description: "Test description 03",
-      link: "https://google.com",
+      name: "Pre-kart",
+      description: "An e-commerce website based on Next JS",
+      link: "https://next-prekart.vercel.app",
     },
   ]);
 
@@ -171,14 +159,14 @@ function Works() {
             },
           }}
         >
+          <Paper className="cs-pointer" onClick={updateClickedOther}>
+            Next
+          </Paper>
           <Paper className="cs-pointer" onClick={updateClickedReact}>
-            React 
+            React
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedAngular}>
             Angular
-          </Paper>
-          <Paper className="cs-pointer" onClick={updateClickedOther}>
-            Next
           </Paper>
           <Paper className="cs-pointer" onClick={updateClickedJS}>
             Javascript
