@@ -10,6 +10,7 @@ import ang03 from "./../Assets/ang04.png";
 import rct01 from "./../Assets/rct01.png";
 import rct02 from "./../Assets/rct02.png";
 import rct03 from "./../Assets/rct03.png";
+import nxt01 from "./../Assets/nxt01.png";
 
 function Works() {
   const [clickedJS, setClickedJs] = useState(false);
@@ -97,6 +98,7 @@ function Works() {
       name: "Pre-kart",
       description: "An e-commerce website based on Next JS",
       link: "https://next-prekart.vercel.app",
+      imgLink: nxt01,
     },
   ]);
 
