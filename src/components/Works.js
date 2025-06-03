@@ -11,6 +11,8 @@ import rct01 from "./../Assets/rct01.png";
 import rct02 from "./../Assets/rct02.png";
 import rct03 from "./../Assets/rct03.png";
 import nxt01 from "./../Assets/nxt01.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Tooltip from "@mui/material/Tooltip";
 
 function Works() {
   const [clickedJS, setClickedJs] = useState(false);
@@ -173,6 +175,25 @@ function Works() {
           <Paper className="cs-pointer" onClick={updateClickedJS}>
             Javascript
           </Paper>
+        </Box>
+
+        <Box
+          // width={100}
+          sx={{
+            // bgcolor: "#EF9166",
+            color: "#f47b03",
+            display: "flex",
+            alignItems: "right",
+            justifyContent: "right",
+            fontSize: "50px",
+          }}
+        >
+          <Tooltip title="Expand to see the projects" placement="top">
+            <ExpandMoreIcon
+              className="cs-pointer"
+              onClick={updateClickedOther}
+            />
+          </Tooltip>
         </Box>
       </div>
       {(clickedJS || clickedAngular || clickedReact || clickedOther) &&
