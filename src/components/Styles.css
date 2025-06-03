@@ -479,6 +479,10 @@ hr {
   background-image: url(./../Assets/Javascript.svg);
   animation: npmanime infinite 3s linear;
 }
+.typescript {
+  background-image: url(./../Assets/TS.svg);
+  animation: npmanime infinite 3s linear;
+}
 .jest {
   background-image: url(./../Assets/Jest.svg);
   animation: npmanime infinite 20s linear;

@@ -42,8 +42,8 @@ function Skills() {
           <Tooltip title="Angular" placement="top">
             <div className="angular"></div>
           </Tooltip>
-          <Tooltip title="Bootstrap">
-            <div className="bootstrap"></div>
+          <Tooltip title="Typescript">
+            <div className="typescript"></div>
           </Tooltip>
 
           <Tooltip title="GraphQL">
