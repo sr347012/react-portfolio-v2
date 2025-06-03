@@ -142,6 +142,7 @@ body {
   width: 200px;
   height: 100px;
   align-items: right;
+  margin-left: 180px;
 }
 .img-cgi {
   background-image: url(./../Assets/CGI.png);
@@ -164,6 +165,7 @@ body {
   display: block;
   width: 200px;
   height: 100px;
+  margin-left: 180px;
 }
 .img-abacus {
   background-image: url(./../Assets/Abacus.png);
@@ -171,6 +173,7 @@ body {
   display: block;
   width: 200px;
   height: 100px;
+  margin-left: 180px;
 }
 .img-psl {
   background-image: url(./../Assets/psl.png);
