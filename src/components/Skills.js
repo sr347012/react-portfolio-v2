@@ -5,7 +5,7 @@ function Skills() {
   return (
     <div className="skill-parent">
       <div className="skill-circle">
-        <div>
+        {/* <div>
           <Tooltip title="React" placement="top">
             <div className="react"></div>
           </Tooltip>
@@ -49,8 +49,40 @@ function Skills() {
           <Tooltip title="GraphQL">
             <div className="graphQl"></div>
           </Tooltip>
-        </div>
-        <div></div>
+        </div> */}
+      <div>
+        <Tooltip title="tensorflow">
+          <div className="tensorflow"></div>
+        </Tooltip>
+        <Tooltip title="keras">
+          <div className="keras"></div>
+        </Tooltip>
+        <Tooltip title="pytorch">
+          <div className="pytorch"></div>
+        </Tooltip>
+      </div>
+      <div>
+        <Tooltip title="numpy">
+          <div className="numpy"></div>
+        </Tooltip>
+        <Tooltip title="pandas">
+          <div className="pandas"></div>
+        </Tooltip>
+        <Tooltip title="scikit-learn">
+          <div className="scikit-learn"></div>
+        </Tooltip>
+      </div>
+      <div>
+        <Tooltip title="python">
+          <div className="python"></div>
+        </Tooltip>
+        <Tooltip title="opencv">
+          <div className="opencv"></div>
+        </Tooltip>
+        <Tooltip title="Jupyter">
+          <div className="jupyter"></div>
+        </Tooltip>
+      </div>
       </div>
     </div>
   );

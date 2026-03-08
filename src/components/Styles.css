@@ -501,6 +501,44 @@ hr {
   background-image: url(./../Assets/Nodejs.svg);
   animation: nodeanime infinite 4s linear;
 }
+.tensorflow {
+  background-image: url(./../Assets/tensorflow.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.keras {
+  background-image: url(./../Assets/keras.svg);
+  animation: htmlanime infinite 3s linear;
+  background-color: #ef9166;
+}
+.pytorch {
+  background-image: url(./../Assets/pytorch.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.python {
+  background-image: url(./../Assets/python.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.numpy {
+  background-image: url(./../Assets/NumPy.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.pandas {
+  background-image: url(./../Assets/Pandas.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.scikit-learn {
+  background-image: url(./../Assets/scikit-learn.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.opencv {
+  background-image: url(./../Assets/opencv.svg);
+  animation: htmlanime infinite 3s linear;
+}
+.jupyter {
+  background-image: url(./../Assets/Jupyter.svg);
+  animation: htmlanime infinite 3s linear;
+  /* background-color: #ef9166; */
+}
 .bootstrap {
   background-image: url(./../Assets/Bootstrap.svg);
   animation: htmlanime infinite 3s linear;

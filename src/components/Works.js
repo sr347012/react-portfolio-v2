@@ -12,9 +12,15 @@ import rct02 from "./../Assets/rct02.png";
 import rct03 from "./../Assets/rct03.png";
 import nxt01 from "./../Assets/nxt01.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import Tooltip from "@mui/material/Tooltip";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import SatelliteIcon from "@mui/icons-material/Satellite";
 
 function Works() {
+  const [clickedMore, setClickedMore] = useState(false);
+  const [clickedDL, setClickedDL] = useState(false);
+  const [clickedCV, setClickedCV] = useState(false);
   const [clickedJS, setClickedJs] = useState(false);
   const [clickedReact, setClickedReact] = useState(false);
   const [clickedAngular, setClickedAngular] = useState(false);
@@ -22,6 +28,46 @@ function Works() {
 
   const [projects, setProjects] = useState([]);
 
+  const [cvprojects, setCvProjects] = useState([
+    {
+      id: "01",
+      name: "Loan assistant bot (LAB)",
+      description:
+        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+    },
+    {
+      id: "02",
+      name: "Connected Cars using AWS",
+      description:
+        "Connected cars is an application which designs cars with futuristic features such as signal tracking log, accident log, dashcam log, facial authentication.",
+    },
+    {
+      id: "03",
+      name: "Driver smoke detection",
+      description:
+        "This is a hackathon project which was designed to identify if a truck driver is smoking when he is on duty, or sleeping on duty, or watching mobile on duty. ",
+    },
+  ]);
+  const [dlprojects, setDlProjects] = useState([
+    {
+      id: "01",
+      name: "DL-P1",
+      description:
+        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+    },
+    {
+      id: "02",
+      name: "DL-P2",
+      description:
+        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+    },
+    {
+      id: "03",
+      name: "DL-P3",
+      description:
+        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+    },
+  ]);
   const [jsProjects, setJsProjects] = useState([
     {
       id: "01",
@@ -104,6 +150,14 @@ function Works() {
     },
   ]);
 
+  const updateClickedCV = () => {
+    setClickedCV(true);
+    setClickedDL(false);
+  };
+  const updateClickedDL = () => {
+    setClickedDL(true);
+    setClickedCV(false);
+  };
   const updateClickedJS = () => {
     setClickedJs(!clickedJS);
     setClickedReact(false);
@@ -132,70 +186,163 @@ function Works() {
     setClickedAngular(false);
     setProjects(mobProjects);
   };
-
+  const updateClickedMore = () => {
+    setClickedMore((clickedMore) => !clickedMore);
+  };
   return (
     <>
-      <div>
-        <h3 className="works-heading">Works</h3>
-        <Box
-          sx={{
-            // border: '1px dashed #EF9166',
-            // borderRadius: '20px',
+      <h3 className="works-heading">Works</h3>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          "& > :not(style)": {
+            m: 2,
+            mb: "50px",
+            width: 500,
+            height: 120,
+            animation: "htmlanime infinite 10s linear",
+            borderRadius: "10px",
             display: "flex",
-            flexWrap: "wrap",
-            "& > :not(style)": {
-              m: 3,
-              p: 2,
-              mb: "10%",
-              width: 200,
-              height: 320,
-              animation: "tabanime infinite 10s linear",
-              // rotate: '20deg',
-              borderRadius: "300px",
+            alignItems: "center",
+            justifyContent: "center",
+            bgcolor: "#EF9166",
+            fontSize: "24px",
+            boxShadow: "2px 3px 5px 3px white, -3px -1px 3px 3px #EF9166",
+          },
+        }}
+      >
+        <Paper className="cs-pointer" onClick={updateClickedDL}>
+          Deep Learning
+        </Paper>
+        <Paper className="cs-pointer" onClick={updateClickedCV}>
+          Computer vision
+        </Paper>
+      </Box>
+      {clickedMore && (
+        <div>
+          <Box
+            sx={{
+              // border: '1px dashed #EF9166',
+              // borderRadius: '20px',
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              bgcolor: "#EF9166",
-              // color: '#f47b03',
-              fontSize: "24px",
-              // border: '5px solid white',
-              boxShadow: "2px 3px 5px 3px white, -3px -1px 3px 3px #EF9166",
-            },
-          }}
-        >
-          <Paper className="cs-pointer" onClick={updateClickedOther}>
-            Next
-          </Paper>
-          <Paper className="cs-pointer" onClick={updateClickedReact}>
-            React
-          </Paper>
-          <Paper className="cs-pointer" onClick={updateClickedAngular}>
-            Angular
-          </Paper>
-          <Paper className="cs-pointer" onClick={updateClickedJS}>
-            Javascript
-          </Paper>
-        </Box>
+              flexWrap: "wrap",
+              "& > :not(style)": {
+                m: 3,
+                p: 2,
+                mb: "10%",
+                width: 200,
+                height: 320,
+                animation: "tabanime infinite 10s linear",
+                // rotate: '20deg',
+                borderRadius: "300px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                bgcolor: "#EF9166",
+                // color: '#f47b03',
+                fontSize: "24px",
+                // border: '5px solid white',
+                boxShadow: "2px 3px 5px 3px white, -3px -1px 3px 3px #EF9166",
+              },
+            }}
+          >
+            <Paper className="cs-pointer" onClick={updateClickedOther}>
+              Next
+            </Paper>
+            <Paper className="cs-pointer" onClick={updateClickedReact}>
+              React
+            </Paper>
+            <Paper className="cs-pointer" onClick={updateClickedAngular}>
+              Angular
+            </Paper>
+            <Paper className="cs-pointer" onClick={updateClickedJS}>
+              Javascript
+            </Paper>
+          </Box>
 
+          <Box
+            // width={100}
+            sx={{
+              // bgcolor: "#EF9166",
+              color: "#f47b03",
+              display: "flex",
+              alignItems: "right",
+              justifyContent: "right",
+              fontSize: "50px",
+            }}
+          >
+            <Tooltip title="Expand to see the projects" placement="top">
+              <ExpandMoreIcon
+                className="cs-pointer"
+                onClick={updateClickedOther}
+              />
+            </Tooltip>
+          </Box>
+          <ExpandLessIcon
+            sx={{ bgcolor: "#EF9166" }}
+            className="cs-pointer"
+            onClick={updateClickedMore}
+          />
+        </div>
+      )}
+      {clickedCV &&
+        cvprojects.map((cvproj) => (
+          <div className="AI-flex" key={cvproj.id}>
+            {cvproj.id % 2 == 0 && (
+              <SatelliteIcon
+                className="AI-div-pic"
+                sx={{ color: "#ef9166", fontSize: 150 }}
+              />
+            )}
+            <ul className="AI-div-details">
+              <li>
+                <b>{cvproj.name}</b>
+              </li>
+              <p>{cvproj.description}</p>
+            </ul>
+            {cvproj.id % 2 != 0 && (
+              <SatelliteIcon
+                className="AI-div-pic"
+                sx={{ color: "#ef9166", fontSize: 150 }}
+              />
+            )}
+          </div>
+        ))}
+      {clickedDL &&
+        dlprojects.map((dlproj) => (
+          <div className="AI-flex" key={dlproj.id}>
+            {dlproj.id % 2 == 0 && (
+              <SmartToyIcon
+                className="AI-div-pic"
+                sx={{ color: "#ef9166", fontSize: 150 }}
+              />
+            )}
+
+            <ul className="AI-div-details">
+              <li>{dlproj.name}</li>
+              <p>{dlproj.description}</p>
+            </ul>
+            {dlproj.id % 2 != 0 && (
+              <SmartToyIcon
+                className="AI-div-pic"
+                sx={{ color: "#ef9166", fontSize: 150 }}
+              />
+            )}
+          </div>
+        ))}
+      {/* =========================================== */}
+      {!clickedMore && (
         <Box
-          // width={100}
-          sx={{
-            // bgcolor: "#EF9166",
-            color: "#f47b03",
-            display: "flex",
-            alignItems: "right",
-            justifyContent: "right",
-            fontSize: "50px",
-          }}
+          sx={{ display: "flex", alignItems: "right", justifyContent: "right" }}
         >
-          <Tooltip title="Expand to see the projects" placement="top">
-            <ExpandMoreIcon
-              className="cs-pointer"
-              onClick={updateClickedOther}
-            />
-          </Tooltip>
+          <ExpandMoreIcon
+            sx={{ bgcolor: "#EF9166" }}
+            className="cs-pointer"
+            onClick={updateClickedMore}
+          />
         </Box>
-      </div>
+      )}
       {(clickedJS || clickedAngular || clickedReact || clickedOther) &&
         projects.map((project) => (
           <div className="open-js00" key={project.id}>
