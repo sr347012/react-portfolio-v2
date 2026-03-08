@@ -49,7 +49,6 @@ function App() {
       <About />
       <hr></hr>
 
-
       <Footer />
     </>
   );
