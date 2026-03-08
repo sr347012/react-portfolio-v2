@@ -280,7 +280,7 @@ body {
   background: transparent;
   color: whitesmoke;
   border: #ef9166 1px solid;
-  border-radius: 5%;
+  border-radius: 5px;
   margin: 4%;
   padding: 4%;
   width: 90%;
@@ -685,3 +685,24 @@ hr {
   color: #ef9166;
   background: #ef9166;
 }
+
+.cert-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 75vw;
+    height: 50vmin;
+  }
+  .cert-container img {
+    flex: 1;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale(100%) brightness(75%);
+    transition: all .5s;
+  }
+  .cert-container img:hover{
+    flex: 8;
+    filter: grayscale(0%) brightness(115%);
+  }

@@ -51,7 +51,7 @@ function Contact() {
         <div className='contact-btn'>
             <button onClick={sendEmail}>Submit</button>
         </div>
-        {name} {text}
+
         <div >
             {emailSent? 
             (<Alert severity="success">Thank you for contacting us!!</Alert>) : <></> }

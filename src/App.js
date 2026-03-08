@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Clients from "./components/Clients";
 import AIFootprint from "./components/AIFootprint";
+import Research from "./components/Research";
+import Certifications from "./components/Certifications";
 
 function App() {
   return (
@@ -38,14 +40,15 @@ function App() {
 
       <hr></hr>
 
-      <AIFootprint />
+      <Research />
+      <hr></hr>
+
+      <Certifications />
       <hr></hr>
 
       <About />
       <hr></hr>
 
-      <Contact />
-      <hr></hr>
 
       <Footer />
     </>
