@@ -5,7 +5,7 @@ function Certifications() {
     <>
       <div className="history-heading">Certifications</div>
       <div className="cert-container">
-        <img className="scikit-learn"></img>
+        <img className="cert-ml"></img>
         <img className="pandas"></img>
         <img className="jupyter"></img>
         <img className="pytorch"></img>
