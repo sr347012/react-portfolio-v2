@@ -11,35 +11,41 @@ function About() {
 
         <div className="about-desc">
           <p>
-            Myself Sriram. I have 16+ years of experience in IT industry. I have
-            been associated with multiple organisations such as Tata Consultancy
-            services, Collabera, CGI and Wipro technologies. I have rendered my
-            services to major clients such as American Express, Walmart, Shell
-            and Capital one.
+            From mechanical Engineering to mainframes, and from mainframes to
+            machine learning, My journey has never been easy. To start with-
+            Mainframes was never my choice, but I was chosen by chance. I
+            decided to look inside of it by exploring its backbone- the
+            database(DB2). I worked as a DBA and mantained the DBs for some
+            time. However I could not get excited in it, as it was more of a
+            backend work.
           </p>
           <br />
           <p>
-            I Have been into multiple web technologies such as React, Next
-            JS, Typescript, Angular, Javascript, GraphQL. I had exposure to cloud
-            technologies such as AWS, GCP & IBM Cloud. I also had experience
-            with databases such as DB2, Mongo DB and PostgreSQL.
+            That pushed me towards finding interest in the front end frameworks.
+            With changes reflecting on UI - at finger tips, mainframes to UI
+            transition was more exciting, at the same time a bumpy ride.
+            Javascript, Angular & React gave me some company during this period
+            and kept me engaging. But somewhere in the line, I found a new
+            friend - computer vision. It had lot of dependancies - python
+            programming, Machine learning, and then neural networks. Not only
+            that, there is this debate - between pytorch and tensorflow.
+            However, I am still a bird who is learning to fly.
           </p>
           <br />
           <p>
-            On academic front, I completed my bachelors in 2008. I did my
-            masters in 2022 from Birla institute of Technology & Sciences(BITS)
-            with 7.0 CGPA. I have personal interest in Machine learning. Hence
-            did my masters in data science and engineering. I continued towards
-            doing research in computer vision and enrolled for a PhD in 2023. I
-            participate in ML & AI hackathons and explore multiple
-            opportunities. I explored prompt engineering & GenAI and built
-            multiple projects based on them.
+            Interest in computer vision made me participate in small
+            challenges(during hackathons). I always found happiness when I
+            implemented an algo. At a later point, this interest encouraged me
+            to continue my academics(with the goal that I wanted to share my
+            knowledge), now turned it into a full time researcher. I mixed it
+            with my hobby (playing badminton), to analyze the grip dynamics. I
+            would like to help younger generation coaches/players using my
+            research to improve their technique.
           </p>
-          <br />
+
           <p>
-            Personally, I am an enthusiast. My hobbies include making short
-            movies, reading books and playing badminton. Please feel free to
-            contact me for any related openings.
+            I already told enough about me. Perhaps lets connect, if this
+            generates interest on me.
           </p>
         </div>
       </div>

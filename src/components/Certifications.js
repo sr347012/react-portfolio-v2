@@ -5,11 +5,12 @@ function Certifications() {
     <>
       <div className="history-heading">Certifications</div>
       <div className="cert-container">
+        <img className="cert-dl1"></img>
+        <img className="cert-dl1"></img>
+        <img className="cert-cv"></img>
+        <img className="cert-dl1"></img>
+        <img className="cert-dl1"></img>
         <img className="cert-ml"></img>
-        <img className="pandas"></img>
-        <img className="jupyter"></img>
-        <img className="pytorch"></img>
-        <img className="python"></img>
       </div>
     </>
   );

@@ -14,14 +14,13 @@ function Research() {
           "& > :not(style)": {
             m: 2,
             mb: "50px",
-            width: 200,
-            height: 200,
+            width: 150,
+            height: 150,
             borderRadius: "50%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            // bgcolor: "#EF9166",
-            fontSize: "24px",
+            fontSize: "18px",
             // boxShadow: "2px 3px 5px 3px white, -3px -1px 3px 3px #EF9166",
           },
         }}
@@ -52,8 +51,8 @@ function Research() {
         </Paper>
         <AddIcon
           sx={{
-            color: "#EF9166",
-            fontSize: "14px",
+                      color: "#EF9166",
+              fontSize: "10px"
           }}
         />
         <Paper

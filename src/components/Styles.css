@@ -315,7 +315,7 @@ body {
 }
 
 .about-desc {
-  width: 90%;
+  width: 100%;
   color: #ef9166;
   margin: 2%;
   padding: 2%;
@@ -547,6 +547,12 @@ hr {
 .cert-ml {
   background-image: url(./../Assets/certs/ML.png);
 }
+.cert-cv {
+  background-image: url(./../Assets/certs/CV.png);
+}
+.cert-dl1 {
+  background-image: url(./../Assets/certs/DL1.png);
+}
 .works-parent {
   background-color: #ef9166;
 }
@@ -694,7 +700,7 @@ hr {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 50vw;
+    width: 75vw;
     height: 75vmin;
   }
   .cert-container img {
@@ -706,6 +712,6 @@ hr {
     transition: all .5s;
   }
   .cert-container img:hover{
-    flex: 100;
+    flex: 10;
     filter: grayscale(0%) brightness(115%);
   }

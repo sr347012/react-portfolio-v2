@@ -199,7 +199,7 @@ function Works() {
           "& > :not(style)": {
             m: 2,
             mb: "50px",
-            width: 500,
+            width: 420,
             height: 120,
             animation: "htmlanime infinite 10s linear",
             borderRadius: "10px",
