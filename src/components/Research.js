@@ -4,6 +4,7 @@ import Paper from "@mui/material/Paper";
 import AddIcon from "@mui/icons-material/Add";
 import Tooltip from "@mui/material/Tooltip";
 import { Typography } from "@mui/material";
+import Publications from "./Publications";
 
 function Research() {
   const egoText =
@@ -18,14 +19,15 @@ function Research() {
       sx: {
         backgroundColor: "#EF9166", // Change to your desired color
         color: "black", // Change text color if needed
+        boxShadow: "1px 1px 3px 2px white",
       },
     },
   };
   return (
     <>
       <div className="history-heading">Research</div>
-      <Typography sx={{ color: "#EF9166" }}>
-        My research aims to combine the below elements and forming a unique
+      <Typography sx={{ color: "#EF9166",border:"1px white solid", p:2, mb: 2 }}>
+        My research aims to combine the below elements and form a unique
         system which can help players and coaches improve their techniques.
       </Typography>
       <Box
@@ -81,6 +83,9 @@ function Research() {
             Grip Dynamics
           </Paper>
         </Tooltip>
+      </Box>
+      <Box>
+        <Publications />
       </Box>
     </>
   );

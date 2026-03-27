@@ -51,21 +51,21 @@ function Works() {
   const [dlprojects, setDlProjects] = useState([
     {
       id: "01",
-      name: "DL-P1",
+      name: "DL-CIFAR10",
       description:
-        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+        "Use Deep learning algorithms to detect and identify different classes in CIFAR10 dataset",
     },
     {
       id: "02",
-      name: "DL-P2",
+      name: "DL-Custom",
       description:
-        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+        "Use Deep learning algorithms to identify different classes in a custom dataset.",
     },
     {
       id: "03",
-      name: "DL-P3",
+      name: "DL-MNIST",
       description:
-        "LAB is a machine learning bot which automates the process of loan verification using openCV.",
+        "Use deep learning algorithms to identify different digits of MNIST dataset",
     },
   ]);
   const [jsProjects, setJsProjects] = useState([

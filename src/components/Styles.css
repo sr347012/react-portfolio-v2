@@ -553,6 +553,9 @@ hr {
 .cert-dl1 {
   background-image: url(./../Assets/certs/DL1.png);
 }
+.cert-UCV {
+  background-image: url(./../Assets/certs/UdemyCV.png);
+}
 .works-parent {
   background-color: #ef9166;
 }
